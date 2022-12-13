@@ -5,7 +5,7 @@ class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  e<HomeScreen> createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
@@ -34,12 +34,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 itemBuilder: (context, index) {
                   return Card(
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10)
-                    ),
+                        borderRadius: BorderRadius.circular(10)),
                     child: ExpansionTile(
                       title: Text(
                         AppConstant.types[index],
-                        
                         style: const TextStyle(
                           fontSize: 16,
                           fontWeight: FontWeight.w500,
